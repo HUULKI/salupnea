@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia shop</title>
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/bl-button1.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="location.href='index1.html'" onclick="slowScroll('#top')">
+            <img src="images/julia_logo.png" alt="logo" class="title_logo">
+            <span class="title">Julie shop</span>
+        </div>
+        <div id="nav">
+            <a href="#" title="1" onclick="slowScroll('main')">GIFT</a>
+            <a href="about_dap.html" title="2" onclick="slowScroll('main1')">PAYMENTS</a>
+            <a href="about_faq.html" title="3" onclick="slowScroll('main2')">FAQ</a>
+            <a href="about_public.html" title="4" onclick="slowScroll('main3')">PUBLIC OFFER</a>
+        </div>
+    </header>
+
+    <div class="about">
+        <p class="about_h1">PAYMENT</p>
+        <p class="about_h3">We accept crypto payment. 
+            If you have any questions about payment with a bank card and other issues related to the work of the site, you can contact the support service of the site in the section Contacts.<br>
+            
+            <br>Your personal information is confidential and will not be disclosed. Your payment data is transmitted only in encrypted form and is not stored on our server.</p>
+        <p class="about_h1">PAYMENT RULES, SECURITY AND PRIVACY OF INFORMATION</p>
+        <p class="about_h3">Internet payment service is carried out in accordance with the rules of international payment systems Visa, MasterCard on the principles of confidentiality and security of payment, which uses the most modern methods of verification, encryption, and data transmission over closed communication channels. The security of processing Internet payments is guaranteed by Woopkassa LLP.
+
+            <br><br>On the page for entering bank card data you need to enter: card number, cardholder's name, card expiration date, three-digit security code (CVV2 for VISA, CVC2 for MasterCard, Additional Identification Code for MIR). All the necessary data is printed on the card itself.
+            
+            <br><br>The processing center protects and processes bank card data according to the PCI DSS 3.0 security standard. Information is transferred to the payment gateway using SSL encryption technology. Further information is transmitted through closed banking networks with the highest level of reliability. For additional authentication of the cardholder, the 3-D Secure protocol is used.
+            </p>
+        <p class="about_h1">PAYMENT DENIALPAYMENT DENIAL</p>
+        <p class="about_h3">Denial Cases:
+            <br>*the bank card is not designed to make payments over the Internet. You can find out about this by contacting your bank;
+            <br>*insufficient funds on the bank card. You can get more information on availability of funds by contacting your bank;
+            <br>*the card data were entered incorrectly;
+            <br>*the validity period of the bank card is expired.
+            <br><br>The expiry date of the card is usually found on the front side of the card. You can find out more about the card expiration date by contacting your bank.
+            </p>
+    </div>
+
+
+    <footer>
+        <div class="footer_top">
+            <img src="images/julia_logo.png" alt="logo" class="footer_top_logo">
+            <span class="footer_title">Julie shop</span>
+            <img src="images/footer_pic.png" alt="picture" class="footer_top_img">
+        </div>
+        <div class="footer_bottom">
+            
+            <img src="images/footer_pic1.png" alt="" class="footer_bottom_img">
+
+            <div class="footer_social_list">
+                <div class="footer_social_item">
+                    <a href="https://www.instagram.com/juliejessofficial" class="footer_social_item_link">
+                        <img src="images/insta_2.svg" alt="twitter" class="footer_icon_link">
+                    </a>
+                </div>
+                <div class="footer_social_item">
+                    <a href="#" class="footer_social_item_link">
+                        <img src="images/telegram_2.svg" alt="twitter" class="footer_icon_link">
+                    </a>
+                </div>
+                <div class="footer_social_item">
+                    <a href="#" class="footer_social_item_link">
+                        <img src="images/tik-tok_2.svg" alt="twitter" class="footer_icon_link">
+                    </a>
+                </div>
+                <div class="footer_social_item">
+                    <a href="#" class="footer_social_item_link">
+                        <img src="images/twitter_2.svg" alt="twitter" class="footer_icon_link">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_menu">
+                <span class="footer_menu_link">Concept</span>
+                <span class="footer_menu_link">Payment</span>
+                <span class="footer_menu_link">FAQ</span>
+                <span class="footer_menu_link">Contacts</span>
+                <span class="footer_menu_link">Privacy policy</span>
+            </div>
+
+        </div>
+
+        <div class="footer_copyright">
+            <span>The site may contain products that are not intended for persons under the age of 18<br>All rights reserved©2023</span>
+        </div>
+        
+    </footer>
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
