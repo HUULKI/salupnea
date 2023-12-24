@@ -1,0 +1,42 @@
+footer {
+    margin-top: 100px;
+}
+
+.about {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 30%;
+    float: left;
+    margin-top: 150px;
+}
+
+.about_h1 {
+    color: rgb(38, 38, 38);
+    font-family: 'Maitree', serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    max-width: 900px;
+}
+
+.about_h2 {
+    color: rgb(38, 38, 38);
+    font-family: 'Maitree', serif;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+.about_h3 {
+    color: rgb(38, 38, 38);
+    font-family: 'Maitree', serif;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+a {
+    all: unset;
+}
